@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:clickable="true"
+    android:background="@drawable/back_round"
+    android:padding="10dp"
+    android:paddingStart="10dp"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tViewName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:text="Диалог"/>
+
+        <TextView
+            android:id="@+id/tViewDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="22.10.2011 в 12:30"
+            android:textColor="@color/back_black"
+            android:layout_marginStart="5dp"
+            android:textStyle="italic"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginEnd="8dp">
+
+        <TextView
+            android:id="@+id/audioDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/back_black"
+            android:text="50:03" />
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:clickable="false"
+        android:background="@drawable/ic_round"
+        android:src="@drawable/baseline_play_arrow_24"
+
+        android:id="@+id/btnPlayPause"/>
+
+
+</LinearLayout>
